@@ -28,8 +28,7 @@ runs:
       run: |
         echo "/home/runner/.local/bin" >> $GITHUB_PATH
         echo "/Users/runner/Library/Python/3.9/bin" >> $GITHUB_PATH
-        echo "$GITHUB_PATH"
-        echo "$PATH"
+        /Users/runner/Library/Python/3.9/bin/conan --version
       shell: bash
     - name: Fix path on MacOS
       run: |
